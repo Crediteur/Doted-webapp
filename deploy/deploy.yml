@@ -1,0 +1,14 @@
+---
+- hosts: app
+  tasks:
+    # docker run -d --name t5g5-app -p 8000:3000 --network t5g5 --restart always docker.nexus.mapelabs.eu/t5g5-app:latest
+    - name: Run app container with the latest image
+      community.docker.docker_container:
+        image: docker.nexus.mapelabs.eu/t5g5-app:latest
+        name: t5g5-app
+        published_ports:
+          - 8000:3000
+        pull: yes
+        restart_policy: unless-stopped
+        networks:
+          - name: t5g5

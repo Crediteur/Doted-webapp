@@ -1,0 +1,67 @@
+---
+kind: pipeline
+name: main
+type: docker
+
+steps:
+  - name: build-verify
+    # jarredsumner/bun:0.5.0?
+    image: docker.nexus.mapelabs.eu/t5g5/pnpm:7.25.0
+    privileged: true
+    commands:
+      - mkdir -p /cache/pnpm-store
+      - rm -Rf build
+      - pnpm config set store-dir /cache/pnpm-store
+      - pnpm config set hoist false
+      - pnpm config set node-linker isolated
+      - pnpm config set package-import-method copy
+      - pnpm prune
+      - pnpm run lint
+      - pnpm run test:unit:run
+
+      # build and pre-seed db for now:
+      - pnpm run rebuild-db
+      - pnpm run build
+      - mv db build/
+
+      # install dependencies
+      - cp package.json pnpm-lock.yaml build/
+      - (cd build; pnpm i -P --no-hoist --frozen-lockfile --virtual-store-dir .pnpm)
+    volumes:
+      - name: runner-cache-t5g5-mods
+        path: /cache
+
+  # see https://docs.drone.io/plugins/popular/docker/
+  - name: docker
+    image: docker.nexus.mapelabs.eu/plugins/docker
+    privileged: true
+    settings:
+      username:
+        from_secret: docker_host_username
+      password:
+        from_secret: docker_host_password
+      registry: docker-host.nexus.mapelabs.eu
+      repo: docker-host.nexus.mapelabs.eu/t5g5-app
+      mirror: https://docker.nexus.mapelabs.eu
+      tags:
+        - latest
+        # - '1.0.1'
+    when:
+      branch: main
+      event:
+        exclude: pull_request
+
+  # https://git.mapelabs.eu/mapelabs/drone-plugins/src/branch/master/ansible-plugin
+  - name: deploy
+    image: docker.nexus.mapelabs.eu/t5g5-ansible
+    settings:
+      dir: deploy
+      playbook: deploy.yml
+      limit: app_dev
+    when:
+      branch: main
+      event:
+        exclude: pull_request
+
+image_pull_secrets:
+  - dockerconfigjson

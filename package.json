@@ -1,0 +1,49 @@
+{
+  "name": "doted",
+  "version": "0.5.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "test:unit": "vitest",
+    "test:unit:run": "vitest run",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write .",
+    "rebuild-db": "shx rm -f db/doted.sqlite && shx rm -Rf static/dyn && shx mkdir -p db && npx knex migrate:latest && npx knex seed:run",
+    "append-pokes": "shx rm -Rf seeds/static_cards/images/poke && node seeds/scraper/poke_scraper.js >> seeds/static_cards/cardsets.yaml"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "^1.1.4",
+    "@sveltejs/kit": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.3.4",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "prettier-plugin-svelte": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.4",
+    "shelljs": "^0.8.5",
+    "shx": "^0.3.4",
+    "svelte": "^3.54.0",
+    "svelte-check": "^3.0.1",
+    "tailwindcss": "^3.2.4",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.0",
+    "vitest": "^0.25.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^8.0.1",
+    "knex": "^2.4.2",
+    "objection": "^3.0.1"
+  }
+}

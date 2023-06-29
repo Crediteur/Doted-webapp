@@ -1,0 +1,4 @@
+seeds/static_cards/images/**/* filter=lfs diff=lfs merge=lfs -text
+seeds/avatars/* filter=lfs diff=lfs merge=lfs -text
+static/images/**/* filter=lfs diff=lfs merge=lfs -text
+static/fonts/**/* filter=lfs diff=lfs merge=lfs -text

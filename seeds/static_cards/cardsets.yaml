@@ -1,0 +1,311 @@
+---
+- title: Soups
+  description: A test set about soups
+  imageType: image/png
+  image: soup/soup.png
+  cardCount: 4
+  cards:
+    - text: Soup 1
+      imageType: image/png
+      image: soup1.png
+    - text: Soup 2
+      imageType: image/png
+      image: soup2.png
+    - text: Soup 3
+      imageType: image/png
+      image: soup3.png
+    - text: Soup 4
+      imageType: image/png
+      image: soup4.png
+---
+- title: Letters
+  description: The Alphabet
+  imageType: image/png
+  image: letters/letter_a.png
+  cardCount: 26
+  cards:
+    - text: Letter A
+      imageType: image/png
+      image: letter_a.png
+    - text: Letter B
+      imageType: image/png
+      image: letter_b.png
+    - text: Letter C
+      imageType: image/png
+      image: letter_c.png
+    - text: Letter D
+      imageType: image/png
+      image: letter_d.png
+    - text: Letter E
+      imageType: image/png
+      image: letter_e.png
+    - text: Letter F
+      imageType: image/png
+      image: letter_f.png
+    - text: Letter G
+      imageType: image/png
+      image: letter_g.png
+    - text: Letter H
+      imageType: image/png
+      image: letter_h.png
+    - text: Letter I
+      imageType: image/png
+      image: letter_i.png
+    - text: Letter J
+      imageType: image/png
+      image: letter_j.png
+    - text: Letter K
+      imageType: image/png
+      image: letter_k.png
+    - text: Letter L
+      imageType: image/png
+      image: letter_i.png
+    - text: Letter M
+      imageType: image/png
+      image: letter_m.png
+    - text: Letter N
+      imageType: image/png
+      image: letter_n.png
+    - text: Letter O
+      imageType: image/png
+      image: letter_o.png
+    - text: Letter P
+      imageType: image/png
+      image: letter_p.png
+    - text: Letter Q
+      imageType: image/png
+      image: letter_q.png
+    - text: Letter R
+      imageType: image/png
+      image: letter_r.png
+    - text: Letter S
+      imageType: image/png
+      image: letter_s.png
+    - text: Letter T
+      imageType: image/png
+      image: letter_t.png
+    - text: Letter U
+      imageType: image/png
+      image: letter_u.png
+    - text: Letter V
+      imageType: image/png
+      image: letter_v.png
+    - text: Letter W
+      imageType: image/png
+      image: letter_w.png
+    - text: Letter X
+      imageType: image/png
+      image: letter_x.png
+    - text: Letter Y
+      imageType: image/png
+      image: letter_y.png
+    - text: Letter Z
+      imageType: image/png
+      image: letter_z.png
+---
+- title: Pokemon
+  description: The first generation of Pokemon
+  imageType: image/png
+  image: poke/25.png
+  cardCount: 50
+  cards:
+    - text: Bulbasaur
+      image: 1.png
+      desc: grass poison
+      imageType: image/png
+    - text: Ivysaur
+      image: 2.png
+      desc: grass poison
+      imageType: image/png
+    - text: Venusaur
+      image: 3.png
+      desc: grass poison
+      imageType: image/png
+    - text: Charmander
+      image: 4.png
+      desc: fire
+      imageType: image/png
+    - text: Charmeleon
+      image: 5.png
+      desc: fire
+      imageType: image/png
+    - text: Charizard
+      image: 6.png
+      desc: fire flying
+      imageType: image/png
+    - text: Squirtle
+      image: 7.png
+      desc: water
+      imageType: image/png
+    - text: Wartortle
+      image: 8.png
+      desc: water
+      imageType: image/png
+    - text: Blastoise
+      image: 9.png
+      desc: water
+      imageType: image/png
+    - text: Caterpie
+      image: 10.png
+      desc: bug
+      imageType: image/png
+    - text: Metapod
+      image: 11.png
+      desc: bug
+      imageType: image/png
+    - text: Butterfree
+      image: 12.png
+      desc: bug flying
+      imageType: image/png
+    - text: Weedle
+      image: 13.png
+      desc: bug poison
+      imageType: image/png
+    - text: Kakuna
+      image: 14.png
+      desc: bug poison
+      imageType: image/png
+    - text: Beedrill
+      image: 15.png
+      desc: bug poison
+      imageType: image/png
+    - text: Pidgey
+      image: 16.png
+      desc: normal flying
+      imageType: image/png
+    - text: Pidgeotto
+      image: 17.png
+      desc: normal flying
+      imageType: image/png
+    - text: Pidgeot
+      image: 18.png
+      desc: normal flying
+      imageType: image/png
+    - text: Rattata
+      image: 19.png
+      desc: normal
+      imageType: image/png
+    - text: Raticate
+      image: 20.png
+      desc: normal
+      imageType: image/png
+    - text: Spearow
+      image: 21.png
+      desc: normal flying
+      imageType: image/png
+    - text: Fearow
+      image: 22.png
+      desc: normal flying
+      imageType: image/png
+    - text: Ekans
+      image: 23.png
+      desc: poison
+      imageType: image/png
+    - text: Arbok
+      image: 24.png
+      desc: poison
+      imageType: image/png
+    - text: Pikachu
+      image: 25.png
+      desc: electric
+      imageType: image/png
+    - text: Raichu
+      image: 26.png
+      desc: electric
+      imageType: image/png
+    - text: Sandshrew
+      image: 27.png
+      desc: ground
+      imageType: image/png
+    - text: Sandslash
+      image: 28.png
+      desc: ground
+      imageType: image/png
+    - text: Nidoran-f
+      image: 29.png
+      desc: poison
+      imageType: image/png
+    - text: Nidorina
+      image: 30.png
+      desc: poison
+      imageType: image/png
+    - text: Nidoqueen
+      image: 31.png
+      desc: poison ground
+      imageType: image/png
+    - text: Nidoran-m
+      image: 32.png
+      desc: poison
+      imageType: image/png
+    - text: Nidorino
+      image: 33.png
+      desc: poison
+      imageType: image/png
+    - text: Nidoking
+      image: 34.png
+      desc: poison ground
+      imageType: image/png
+    - text: Clefairy
+      image: 35.png
+      desc: fairy
+      imageType: image/png
+    - text: Clefable
+      image: 36.png
+      desc: fairy
+      imageType: image/png
+    - text: Vulpix
+      image: 37.png
+      desc: fire
+      imageType: image/png
+    - text: Ninetales
+      image: 38.png
+      desc: fire
+      imageType: image/png
+    - text: Jigglypuff
+      image: 39.png
+      desc: normal fairy
+      imageType: image/png
+    - text: Wigglytuff
+      image: 40.png
+      desc: normal fairy
+      imageType: image/png
+    - text: Zubat
+      image: 41.png
+      desc: poison flying
+      imageType: image/png
+    - text: Golbat
+      image: 42.png
+      desc: poison flying
+      imageType: image/png
+    - text: Oddish
+      image: 43.png
+      desc: grass poison
+      imageType: image/png
+    - text: Gloom
+      image: 44.png
+      desc: grass poison
+      imageType: image/png
+    - text: Vileplume
+      image: 45.png
+      desc: grass poison
+      imageType: image/png
+    - text: Paras
+      image: 46.png
+      desc: bug grass
+      imageType: image/png
+    - text: Parasect
+      image: 47.png
+      desc: bug grass
+      imageType: image/png
+    - text: Venonat
+      image: 48.png
+      desc: bug poison
+      imageType: image/png
+    - text: Venomoth
+      image: 49.png
+      desc: bug poison
+      imageType: image/png
+    - text: Diglett
+      image: 50.png
+      desc: ground
+      imageType: image/png
