@@ -1,7 +1,8 @@
 # Doted-webapp
- t5g5 Agile group project
 
-## Previews
+Created with Agile group t5g5. Made using Svelte and SQLite.
+
+## Preview
 
 <img width="2926" height="950" alt="Mobile Wireframe Overview" src="https://github.com/user-attachments/assets/dc6a9980-0c94-457e-8a5d-aec890b318c8" />
 <img width="1541" height="867" alt="Customer Journey Map" src="https://github.com/user-attachments/assets/0e8589a6-bd11-4118-a143-ffb639735ec0" />
